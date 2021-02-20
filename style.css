@@ -33,10 +33,15 @@ header {
 nav ul {
   list-style-type: none;
 }
+a:link {
+  text-decoration: none;
+}
 nav li {
   display: inline-block;
 }
-body {
+body,
+input,
+button {
   /* margin-left: 20vh;
   margin-right: 20vh; */
   font-family: "Raleway", sans-serif;
@@ -46,7 +51,7 @@ html {
 }
 section {
   padding-top: 80px;
-  min-height: 50vh;
+  min-height: 30vh;
   text-align: center;
 }
 p {
@@ -64,12 +69,25 @@ section:first-child {
 section:nth-child(2) {
   background-color: #84b8fb;
 }
+section:nth-child(3) {
+  background-color: #0153be;
+}
 section:last-child {
   background-color: #4c6fff;
 }
+button {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+}
+input {
+  padding: 5px;
+}
+
 /* section :nth-child(2) {
     background-color: rgb(115, 115, 218);
 } */
+
 #toTopBtn {
   position: fixed;
   bottom: 2rem;
@@ -82,6 +100,10 @@ section:last-child {
 }
 footer {
   background-color: black;
+}
+
+#prophecy {
+  margin-top: 20px;
 }
 @media (max-width: 576px) {
   nav ul {
